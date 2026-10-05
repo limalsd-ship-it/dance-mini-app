@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>Запись на занятия</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 36px 24px;
+      color: white;
+      font-family: Arial, sans-serif;
+      background: #151515 url("./background.png")
+                  center center / cover no-repeat;
+    }
+
+    main {
+      max-width: 380px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 { margin-bottom: 12px; }
+
+    button {
+      width: 100%;
+      padding: 16px;
+      margin-top: 12px;
+      border: 1px solid #b99050;
+      border-radius: 14px;
+      background: rgba(20, 20, 20, 0.8);
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Запись на занятия</h1>
+    <p>Выбери удобное время для занятия</p>
+    <button disabled>Записаться</button>
+    <button disabled>Мои записи</button>
+  </main>
+
+  <script>
+    const app = window.Telegram?.WebApp;
+    app?.ready();
+    app?.expand();
+  </script>
+</body>
+</html>
+
+
+
+
